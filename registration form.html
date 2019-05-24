@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<title>REGISTRATION FORM...</title>
+<style>
+.abcd:hover{background:pink}
+#abc:hover{background:skyblue}
+</style>
+
+<script>
+function fff()
+{
+alert("your account has created sucessfully");
+}
+</script>
+</head>
+
+<body bgcolor="black">
+<form position="fixed">
+<table border="5" align="right" style="text_align:center;" collapse="border_collapse:collapse" width="50%" >
+
+<h1 align="center" style="color:red"><marquee direction="right"><font face=jokerman>ONLINE MOVIES TICKET BOOKING</font></marquee></h1>
+<tr class="abcd" style="color:white;">
+<td id="abc"><strong>HOME</strong></td>
+<td id="abc"><strong>About Us</strong></td>
+<td id="abc"><strong>Contact Us</strong></td>
+<td id="abc"><strong>log in</strong></tr></table>
+<h1 align="left"><img src="thBIBW5GXA.jpg" width="125px" height="75px"></h1>
+
+<h1 align="center" style="color:yellow;">Welcome To The World Online Movies Fashion</h1>
+<marquee direction="left"><table border="1" align="left" width="100%">
+<tr>
+<td><img src="tridev-bhojpuri-film-poster-mt-wiki.jpg" width="210px" height="175px"></td>
+<td><img src="Jagga-Jasoos.jpg"  width="218px" height="175px"></td>
+<td><img src="Baahubali-2017-movie-poster-mt-wiki.jpg" width="218px" height="175px"></td>
+<td><img src="fd_kong_620x350_mlp_v1_lg.jpg" width="218px" height="175px"></td>
+<td><img src="badrinath-ki-dulhania-first-look-varun-dhawan-alia-bhatt-upcoming-movie-mtwiki-2017.jpg" width="218px" height="175px"></td>
+<td><img src="commando-2-upcoming-vidyut-jammwal-movie-poster-release-date-star-cast-mt-wiki-2017.jpg" width="218px" height="175px"></td>
+</tr>
+</table></marquee>
+<br>
+<hr/></form>
+<script>
+function validate()
+{
+if(document.getElementById("t1").value=="")
+{
+alert("Please provide user id!");
+return false;
+}
+if(document.getElementById("t2").value=="")
+{
+alert("please provide your name!");
+return false;
+}
+if(document.getElementById("t6").value=="" || isNaN(document.getElementById("t6").value) ||
+document.getElementById("t6").value.length !=10)
+{
+alert("please provide your mobile no!");
+return false;
+}
+if(document.getElementById("t3").value=="")
+{
+alert("please provide your email!");
+return false;
+}
+if(document.getElementById("t4").value=="" || isNaN(document.getElementById("t4").value) ||
+document.getElementById("t4").value.length !=6)
+{
+alert("please provide correct password!");
+return false;
+}
+if(document.getElementById("t5").value=="-1")
+{
+alert("please provide your country!");
+return false;
+}
+return true;
+}
+</script>
+<pre><h1 align="center" style="color:red"><i><big>User Registration</big></i></h1></pre>
+
+<form action="html project.html" onsubmit="return(validate());" style="color:white;" method="post">
+<fieldset align="center">
+<legend><h3>Fill the User Details:-</h3></legend>
+<big>User Id:-   </big><input type="text" name="user" id="t1" placeholder="user id..."><br><br>
+<big>Name:-       </big><input type="text" name="Name" id="t2" placeholder="name..."><br><br>
+<big>Number:-    </big><input type="number" name="number" id="t6" placeholder="number..."><br><br>
+<big>Email:-     </big><input type="email" name="Email" id="t3" placeholder="email..."><br><br>
+<big>Password:-</big> <input type="password" name="pass" id="t4" placeholder="password..."><br><br>
+<big>Country:-</big>     <select name="country" id="t5">
+<option value="-1" selected>[choose yours]</option>
+<option value="1">USA</option>
+<option value="2">UK</option>
+<option value="3">INDIA</option>
+<option value="4">ENGLAND</option>
+<option value="5">WEST INDIES</option>
+</select><br>
+<input type="submit" onclick="fff()" value="submit">
+</form>
+</body>
+</html>

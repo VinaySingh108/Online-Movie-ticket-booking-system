@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head><title>forgot password..</title>
+<script>
+function validate()
+{
+if(document.getElementById("t1").value=="")
+{
+alert("please enter your new  password");
+return false;
+}
+if(document.getElementById("t2").value=="")
+{
+alert("please confirm your new password");
+return false;
+}
+return true;
+}
+</script>
+</head>
+
+<body  bgcolor="red">
+<form action="html project.html" onsubmit="return(validate());" method="post">
+<fieldset align="center">
+<legend><h3>Forgot your password:-</h3></legend>
+<h2>NEW PASSWORD:-</h2><input type="password" name="pass" id="t1" placeholder="new password"><br>
+<h2>CONFIRM NEW PASSWORD:-</h2><input type="password" name="passs" id="t2" placeholder="confirm newpassword"><br>
+<input type="submit" value="submit" />
+</form>
+</body>
+</html>

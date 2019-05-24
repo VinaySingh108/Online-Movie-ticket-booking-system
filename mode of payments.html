@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<title>PAYMENT..</title>
+<style>
+.abcd:hover{background:red;}
+#abcde:hover{background:yellow;}
+</style>
+</head>
+<body bgcolor="voilet">
+<script>
+function f1()
+{
+if(document.getElementById("t").value=="" || isNaN(document.getElementById("t").value) || 
+document.getElementById("t").value.length !=16)
+{
+alert("your card no should be of sixteen number!");
+return false;
+}
+if(document.getElementById("t1").value=="" ||isNaN(document.getElementById("t1").value) || 
+document.getElementById("t1").value.length !=3) 
+{
+alert("please write your cvv no!");
+return false;
+}
+if(document.getElementById("t2").value=="")
+{
+alert("give yourq card expiry month");
+return false;
+}
+if(document.getElementById("t3").value=="")
+{
+alert("give your card expiry year");
+return false;
+}
+return true;
+}
+</script>
+
+<h1 align="center" style="color:red;">PAYMENT</h1>
+<table border="10px" align="center" style="color:pink" width="80%">
+<tr><td><img src="th.jpg" width="200px"></td>
+<td id="abcde"><form action="tickets.html" onsubmit="return(f1());" method="post">
+<fieldset align="center">
+<br><input type="number" name="a" id="t" placeholder="Card Number...">
+<br><br>
+<input type="number" name="b" id="t1" placeholder="CVV Number...">
+<br><br>
+<h4>Expiry Date:-<input type="number" name="c" id="t2" placeholder="MM" size="6">
+<input type="number" name="d" id="t3" placeholder="yyyy" size="9"></h4>
+<input type="submit" value="Submit" />
+</form></td>
+<td><img src="th (1).jpg" width="200px"></td>
+</tr>
+</table>
+</body>
+</html>  
